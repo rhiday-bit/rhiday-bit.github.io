@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="id"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260901-05-1a916a1","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YAHO2-t-jNE,0","Arial":"YAGyDvJ_4Ts,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Canva Sans":"YAFLd8sKbwc,2","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAHO2VMiyZo,0","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAEul-FRQw4,0","Georgia":"YAGzXkO0pEM,0","Helvetica Neue":"YAFcf6CtJfI,0","Impact":"YAFcfnjI7Vk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YAHO2a5g66Q,0","JetBrains Mono":"YAFdJksXcAk,0","Libre Baskerville":"YACgEUFdPdA,0","Manrope":"YAHO2b2feC4,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YADLjI9qxTA,0","Nunito":"YACgEX8C5Gg,0","Oleo Script":"YACgEQQ14jI,0","Phantom Sans":"YAHO2E8Pb88,0","Playfair Display":"YACgEYmuCJE,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YADWjpfPmdk,0","Raleway":"YACgEVg3xZg,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Spectral":"YAHO2rVUHIM,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Ubuntu":"YACgERDU--Q,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YADlN8CFZ8Q,0","ui-sans-serif":"YACkoN-xg4g,0"}}');</script><script src="/_sdk/50d846425a1e5082.telemetry_sdk.js" integrity="sha512-Otbex+ztlVbcEGql0rXGd/3E3ee/hqAntg6DeuUEMG6pIPbXGOSvZbFZVzknAXi1tH/itQ+ijEhOTr2aWj6CXg=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Portfolio Guru</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&amp;family=Montserrat:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <style>
+    :root { --navy:#0B1F3A; --royal:#1D4ED8; --gold:#D4AF37; --paper:#F3F7FB; }
+    * { box-sizing: border-box; }
+    body { font-family: "Lato", sans-serif; color: #334155; }
+    .montserrat { font-family: "Montserrat", sans-serif; }
+    .page-section { display: none; animation: reveal .35s ease both; }
+    .page-section.active { display: block; }
+    .nav-btn.active { color: var(--gold); box-shadow: inset 0 -2px 0 var(--gold); }
+    .portfolio-card, .activity-card-ui { transition: transform .2s ease, box-shadow .2s ease; }
+    .portfolio-card:hover, .activity-card-ui:hover { transform: translateY(-4px); box-shadow: 0 18px 35px rgba(11,31,58,.12); }
+    .embed-window { background: linear-gradient(145deg,#f8fafc,#eaf1fb); }
+    .social-link { transition: transform .2s ease, background .2s ease; }
+    .social-link:hover { transform: translateY(-3px); background: #D4AF37; color: #0B1F3A; }
+    .photo-frame { position: relative; overflow: hidden; }
+    .photo-frame::after { content:""; position:absolute; inset:0; border:1px solid rgba(255,255,255,.22); pointer-events:none; }
+    @keyframes reveal { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+    }
+  </style>
+  <script src="/_sdk/b3bf9e8ac58e6ad6.data_sdk.js" type="text/javascript" integrity="sha512-otc1u9NYq9Ms5Jt//7vmhrrqR5CLPr8Jdgs6741gqniClfLMcfmC+jK/cKuQdhLv6G0esJ/FzaMS9tv0T/vj/Q=="></script>
+  <script src="/_sdk/2cfae6c35b9820dc.resizing_sdk.js" type="text/javascript" integrity="sha512-Oy+wKa9tloayelgS18tBfR707QfWMdeA8unVpm1M0/W/edVyjcRCNO6/jCvDwt/HpUta1v7sfMHiF1mAVr5RIA=="></script>
+ </head>
+ <body data-template-id="__page-root" class="w-full min-h-screen flex flex-col" style="background: rgb(255, 255, 255);">
+  <header data-template-id="site-header" class="canva-header sticky top-0 z-40 border-b-4 shadow-md" style="border-color: rgb(212, 175, 55); background: rgb(11, 31, 58);">
+   <div class="w-full max-w-7xl mx-auto px-4 py-4 flex flex-col lg:flex-row gap-4 items-center justify-between">
+    <button type="button" onclick="navigateTo('home')" class="rounded focus:outline-none focus:ring-2 focus:ring-yellow-300"> <span data-template-id="site-logo" class="canva-text montserrat font-extrabold tracking-wider" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 23px; letter-spacing: 0.08rem;">E-PORTFOLIO</span> </button>
+    <nav aria-label="Navigasi utama" class="flex flex-wrap justify-center gap-1">
+     <button data-template-id="nav-home" type="button" class="canva-button nav-btn px-3 py-2 text-sm font-semibold rounded focus:outline-none focus:ring-2 focus:ring-yellow-300" onclick="navigateTo('home')" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Beranda</button> <button data-template-id="nav-modul" type="button" class="canva-button nav-btn px-3 py-2 text-sm font-semibold rounded focus:outline-none focus:ring-2 focus:ring-yellow-300" onclick="navigateTo('modul')" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Modul Ajar</button> <button data-template-id="nav-bahan" type="button" class="canva-button nav-btn px-3 py-2 text-sm font-semibold rounded focus:outline-none focus:ring-2 focus:ring-yellow-300" onclick="navigateTo('bahan')" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Bahan Ajar</button> <button data-template-id="nav-media" type="button" class="canva-button nav-btn px-3 py-2 text-sm font-semibold rounded focus:outline-none focus:ring-2 focus:ring-yellow-300" onclick="navigateTo('media')" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Media Ajar</button> <button data-template-id="nav-video" type="button" class="canva-button nav-btn px-3 py-2 text-sm font-semibold rounded focus:outline-none focus:ring-2 focus:ring-yellow-300" onclick="navigateTo('video')" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Video Praktik</button> <button data-template-id="nav-instrumen" type="button" class="canva-button nav-btn px-3 py-2 text-sm font-semibold rounded focus:outline-none focus:ring-2 focus:ring-yellow-300" onclick="navigateTo('instrumen')" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Instrumen</button> <button data-template-id="nav-nonmengajar" type="button" class="canva-button nav-btn px-3 py-2 text-sm font-semibold rounded focus:outline-none focus:ring-2 focus:ring-yellow-300" onclick="navigateTo('non-mengajar')" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Non-Mengajar</button>
+    </nav>
+   </div>
+  </header>
+  <main class="w-full flex-grow">
+   <section id="home" class="page-section active">
+    <div data-template-id="hero-section" class="canva-banner px-4 py-14 sm:py-20" style="background: linear-gradient(115deg, rgb(11, 31, 58), rgb(29, 78, 216));">
+     <div class="w-full max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div>
+       <p data-template-id="hero-eyebrow" class="canva-text font-bold tracking-[.2em] uppercase mb-3" style="color: rgb(212, 175, 55); font-weight: 700; font-style: normal; font-size: 13px;">PENDIDIKAN PROFESI GURU</p>
+       <h1 data-template-id="hero-title" class="canva-text montserrat font-extrabold mb-2" style="color: rgb(212, 175, 55); font-weight: 800; font-style: normal; font-size: 32px;">E-PORTFOLIO</h1>
+       <h2 data-template-id="hero-name" class="canva-text montserrat font-semibold mb-1" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 24px;">Rahmat Hidayat, S.Sos.</h2>
+       <p data-template-id="hero-role" class="canva-text mb-5" style="color: rgb(203, 213, 225); font-weight: 400; font-style: normal; font-size: 16px;">Broadcasting dan Perfilman · UNESA</p>
+       <div class="w-24 h-1 mb-6" style="background:#D4AF37"></div>
+       <p data-template-id="hero-description" class="canva-text leading-relaxed max-w-xl mb-7" style="color: rgb(226, 232, 240); font-weight: 400; font-style: normal; font-size: 16px; line-height: 1.6;">Portfolio praktik mengajar mandiri di SMK Negeri 1 Surabaya pada materi Komunikasi Efektif di Set Produksi. Ruang ini mendokumentasikan implementasi kompetensi pedagogik, profesional, sosial, dan kepribadian selama Pendidikan Profesi Guru.</p><button data-template-id="hero-button" type="button" onclick="navigateTo('modul')" class="canva-button px-6 py-3 rounded-lg shadow-lg font-bold transition hover:-translate-y-0.5 focus:outline-none focus:ring-4 focus:ring-yellow-200" style="background: rgb(212, 175, 55); color: rgb(11, 31, 58); font-weight: 700; font-style: normal; font-size: 16px;">Lihat Modul Ajar</button>
+      </div>
+      <div class="relative flex justify-center">
+       <div class="absolute w-72 h-72 sm:w-96 sm:h-96 rounded-full blur-3xl opacity-30" style="background:#60A5FA"></div>
+       <div class="relative w-64 h-80 sm:w-80 sm:h-96 rounded-3xl border-4 p-2 shadow-2xl overflow-hidden rotate-2 hover:rotate-0 transition-transform" style="border-color:#D4AF37;background:#0B1F3A">
+        <img data-template-id="teacher-portrait" loading="lazy" class="canva-image w-full h-full rounded-2xl object-cover object-top" src="E:\5. APK\Port\images1.jpeg" alt="Foto formal Rahmat Hidayat mengenakan jas hitam dengan latar merah">
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="w-full max-w-7xl mx-auto px-4 py-12">
+     <div class="grid md:grid-cols-3 gap-6">
+      <article data-template-id="competency-card-1" class="canva-card p-6 rounded-xl border" style="background: rgb(243, 247, 251);">
+       <i data-lucide="badge-check" class="w-9 h-9 mb-4" style="color:#1D4ED8"></i>
+       <h3 data-template-id="competency-title-1" class="canva-text montserrat font-semibold mb-2" style="color: rgb(11, 31, 58); font-weight: 700; font-style: normal; font-size: 19px;">Identitas Diri</h3>
+       <p data-template-id="competency-text-1" class="canva-text text-sm leading-relaxed" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Saya Rahmat Hidayat, S.Sos. lulusan S1 Komunikasi dan Penyiaran Islam Universitas Al-Amien Prenduan, sekarang sedang menempuh PPG Broadcasting dan Perfilman di Universitas Negeri Surabaya.</p>
+      </article>
+      <article data-template-id="competency-card-2" class="canva-card p-6 rounded-xl border" style="background: rgb(243, 247, 251);">
+       <i data-lucide="graduation-cap" class="w-9 h-9 mb-4" style="color:#1D4ED8"></i>
+       <h3 data-template-id="competency-title-2" class="canva-text montserrat font-semibold mb-2" style="color: rgb(11, 31, 58); font-weight: 700; font-style: normal; font-size: 19px;">LPTK</h3>
+       <p data-template-id="competency-text-2" class="canva-text text-sm leading-relaxed" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Universitas Negeri Surabaya sebagai lembaga penyelenggara Pendidikan Profesi Guru.
+        <br>
+        Alamat: Jl. Raya Kampus Unesa / Jl. Lidah Wetan, Kecamatan Lakarsantri, Kota Surabaya </p>
+      </article>
+      <article data-template-id="competency-card-3" class="canva-card p-6 rounded-xl border" style="background: rgb(243, 247, 251);">
+       <i data-lucide="map-pin" class="w-9 h-9 mb-4" style="color:#1D4ED8"></i>
+       <h3 data-template-id="competency-title-3" class="canva-text montserrat font-semibold mb-2" style="color: rgb(11, 31, 58); font-weight: 700; font-style: normal; font-size: 19px;">Tempat PPLM</h3>
+       <p data-template-id="competency-text-3" class="canva-text text-sm leading-relaxed" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">SMK Negeri 1 Surabaya, Jurusan Produksi dan Siaran Program Televisi.
+        <br>
+        Alamat: Jl. Smea No. 4, Wonokromo, Kecamatan Wonokromo, Kota Surabaya </p>
+      </article>
+     </div>
+    </div>
+    <section data-template-id="portfolio-menu-section" class="canva-section py-12 px-4" style="background: rgb(243, 247, 251);">
+     <div class="w-full max-w-7xl mx-auto">
+      <h2 data-template-id="portfolio-menu-title" class="canva-text montserrat font-extrabold text-center mb-8" style="color: rgb(11, 31, 58); font-weight: 800; font-style: normal; font-size: 24px;">MENU PORTFOLIO</h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+       <button type="button" onclick="navigateTo('modul')" class="portfolio-card text-left bg-white p-6 rounded-xl border focus:outline-none focus:ring-4 focus:ring-blue-200" style="border-color:#E8DCA9"> <i data-lucide="book-open" class="w-8 h-8 mb-3" style="color:#1D4ED8"></i> <h3 data-template-id="menu-title-1" class="canva-text montserrat font-semibold mb-2" style="color: rgb(11, 31, 58); font-weight: 700; font-style: normal; font-size: 19px;">Modul Ajar</h3><p data-template-id="menu-text-1" class="canva-text text-sm leading-relaxed" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Rancangan pembelajaran utama yang memuat tujuan, kegiatan, asesmen, dan refleksi.</p></button> <button type="button" onclick="navigateTo('bahan')" class="portfolio-card text-left bg-white p-6 rounded-xl border focus:outline-none focus:ring-4 focus:ring-blue-200" style="border-color:#E8DCA9"> <i data-lucide="file-text" class="w-8 h-8 mb-3" style="color:#1D4ED8"></i> <h3 data-template-id="menu-title-2" class="canva-text montserrat font-semibold mb-2" style="color: rgb(11, 31, 58); font-weight: 700; font-style: normal; font-size: 19px;">Bahan Ajar</h3><p data-template-id="menu-text-2" class="canva-text text-sm leading-relaxed" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Materi pendukung yang terstruktur untuk membantu pemahaman peserta didik.</p></button> <button type="button" onclick="navigateTo('media')" class="portfolio-card text-left bg-white p-6 rounded-xl border focus:outline-none focus:ring-4 focus:ring-blue-200" style="border-color:#E8DCA9"> <i data-lucide="presentation" class="w-8 h-8 mb-3" style="color:#1D4ED8"></i> <h3 data-template-id="menu-title-3" class="canva-text montserrat font-semibold mb-2" style="color: rgb(11, 31, 58); font-weight: 700; font-style: normal; font-size: 19px;">Media Ajar</h3><p data-template-id="menu-text-3" class="canva-text text-sm leading-relaxed" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Presentasi interaktif sebagai media visual untuk memperkuat pembelajaran.</p></button> <button type="button" onclick="navigateTo('video')" class="portfolio-card text-left bg-white p-6 rounded-xl border focus:outline-none focus:ring-4 focus:ring-blue-200" style="border-color:#E8DCA9"> <i data-lucide="video" class="w-8 h-8 mb-3" style="color:#1D4ED8"></i> <h3 data-template-id="menu-title-4" class="canva-text montserrat font-semibold mb-2" style="color: rgb(11, 31, 58); font-weight: 700; font-style: normal; font-size: 19px;">Video Praktik</h3><p data-template-id="menu-text-4" class="canva-text text-sm leading-relaxed" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Dokumentasi penerapan strategi pembelajaran aktif di kelas.</p></button> <button type="button" onclick="navigateTo('instrumen')" class="portfolio-card text-left bg-white p-6 rounded-xl border focus:outline-none focus:ring-4 focus:ring-blue-200" style="border-color:#E8DCA9"> <i data-lucide="clipboard-check" class="w-8 h-8 mb-3" style="color:#1D4ED8"></i> <h3 data-template-id="menu-title-5" class="canva-text montserrat font-semibold mb-2" style="color: rgb(11, 31, 58); font-weight: 700; font-style: normal; font-size: 19px;">Instrumen</h3><p data-template-id="menu-text-5" class="canva-text text-sm leading-relaxed" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Instrumen asesmen untuk memetakan kebutuhan dan capaian belajar.</p></button> <button type="button" onclick="navigateTo('non-mengajar')" class="portfolio-card text-left bg-white p-6 rounded-xl border focus:outline-none focus:ring-4 focus:ring-blue-200" style="border-color:#E8DCA9"> <i data-lucide="users" class="w-8 h-8 mb-3" style="color:#1D4ED8"></i> <h3 data-template-id="menu-title-6" class="canva-text montserrat font-semibold mb-2" style="color: rgb(11, 31, 58); font-weight: 700; font-style: normal; font-size: 19px;">Kegiatan Non-Mengajar</h3><p data-template-id="menu-text-6" class="canva-text text-sm leading-relaxed" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Dokumentasi observasi, piket, pendampingan, dan kontribusi di lingkungan sekolah.</p></button>
+      </div>
+     </div>
+    </section>
+   </section>
+   <section id="modul" class="page-section">
+    <div data-template-id="modul-banner" class="canva-banner px-4 py-10 border-b" style="background: rgb(243, 247, 251);">
+     <div class="w-full max-w-5xl mx-auto">
+      <h2 data-template-id="modul-title" class="canva-text montserrat font-extrabold" style="color: rgb(11, 31, 58); font-weight: 800; font-style: normal; font-size: 24px;">MODUL AJAR</h2>
+      <p data-template-id="modul-subtitle" class="canva-text text-sm mt-2" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Komunikasi Efektif di Set Produksi · XI PSPT 1</p>
+     </div>
+    </div>
+    <div class="w-full max-w-5xl mx-auto px-4 py-10">
+     <article data-template-id="modul-card" class="canva-card p-6 sm:p-8 rounded-2xl border shadow-sm" style="background: rgb(255, 255, 255);">
+      <span data-template-id="modul-label" class="canva-tag inline-block px-3 py-1 rounded text-xs font-bold" style="background: rgb(234, 241, 251); color: rgb(29, 78, 216); font-weight: 700; font-style: normal; font-size: 16px;">KARYA UTAMA</span>
+      <h3 data-template-id="modul-name" class="canva-text montserrat font-bold mt-3 mb-3" style="color: rgb(11, 31, 58); font-weight: 700; font-style: normal; font-size: 19px;">Modul Ajar Komunikasi Efektif di Set Produksi</h3>
+      <p data-template-id="modul-text" class="canva-text leading-relaxed mb-6" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Modul ajar ini disusun sebagai implementasi Kurikulum Merdeka untuk membekali peserta didik memahami komunikasi profesional dalam proses produksi televisi. Materi pembelajaran tidak hanya berfokus pada penguasaan konsep, tetapi juga mengembangkan kemampuan peserta didik dalam menerapkan komunikasi verbal dan nonverbal, menggunakan istilah produksi sesuai standar industri, serta bekerja sama secara efektif dalam tim produksi melalui kegiatan berbasis proyek dan simulasi.</p><a data-template-id="modul-open-link" class="canva-button inline-flex items-center gap-2 px-4 py-2 rounded-lg font-semibold" href="https://drive.google.com/file/d/1dkvze0IAdux2VunTWOxxFiAtV86P1t-C/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="background: rgb(29, 78, 216); color: rgb(255, 255, 255);"> <i data-lucide="external-link" class="w-4 h-4"></i><span data-template-id="modul-open-text" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Buka Modul Ajar</span> </a>
+      <div class="grid sm:grid-cols-2 gap-4 mt-6">
+       <div data-template-id="modul-strength" class="canva-panel rounded-xl p-4" style="background: rgb(236, 253, 245);">
+        <p data-template-id="modul-strength-label" class="canva-text text-sm font-bold mb-1" style="color: rgb(4, 120, 87); font-weight: 700; font-style: normal; font-size: 16px;">Kelebihan</p>
+        <p data-template-id="modul-strength-text" class="canva-text text-sm" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;">Modul ajar memiliki beberapa keunggulan, antara lain:
+<li>menggunakan model Project Based Learning (PjBL) yang sesuai dengan karakteristik pembelajaran vokasi;</li>
+<li>menerapkan pendekatan Deep Learning melalui tahapan Understand, Connect, Apply, dan Reflect sehingga pembelajaran berlangsung lebih bermakna;</li>
+<li>mengintegrasikan pembelajaran kontekstual dengan simulasi dunia industri broadcasting;</li>
+<li>menyediakan perangkat pembelajaran yang lengkap, meliputi LKPD, asesmen diagnostik, formatif, rubrik penilaian, lembar observasi, refleksi peserta didik, hingga pengayaan dan remedial;</li>
+<li>menerapkan asesmen autentik yang menilai aspek pengetahuan, keterampilan, dan sikap peserta didik secara menyeluruh.</li>
+</p>
+       </div>
+       <div data-template-id="modul-weakness" class="canva-panel rounded-xl p-4" style="background: rgb(255, 247, 237);">
+        <p data-template-id="modul-weakness-label" class="canva-text text-sm font-bold mb-1" style="color: rgb(194, 65, 12); font-weight: 700; font-style: normal; font-size: 16px;">Kekurangan</p>
+        <p data-template-id="modul-weakness-text" class="canva-text text-sm" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;">Beberapa hal yang masih dapat dikembangkan dalam modul ini antara lain:
+<li>pelaksanaan pembelajaran memerlukan waktu relatif panjang karena memuat kegiatan diskusi, simulasi, presentasi, dan refleksi;</li>
+<li>membutuhkan fasilitas pendukung seperti LCD, laptop, smartphone, dan media presentasi agar pembelajaran berjalan optimal;</li>
+<li>keberhasilan pembelajaran sangat dipengaruhi oleh kesiapan peserta didik untuk bekerja sama dalam kelompok dan aktif mengikuti simulasi komunikasi produksi.</li></p>
+       </div>
+      </div>
+     </article>
+    </div>
+   </section>
+   <section id="bahan" class="page-section">
+    <div data-template-id="bahan-banner" class="canva-banner px-4 py-10" style="background: rgb(255, 255, 255);">
+     <div class="w-full max-w-5xl mx-auto">
+      <h2 data-template-id="bahan-title" class="canva-text montserrat font-extrabold" style="color: rgb(11, 31, 58); font-weight: 800; font-style: normal; font-size: 24px;">BAHAN AJAR</h2>
+      <p data-template-id="bahan-subtitle" class="canva-text text-sm mt-2" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Komunikasi Efektif di Set Produksi · XI PSPT 1</p>
+     </div>
+    </div>
+    <div class="w-full max-w-5xl mx-auto px-4 py-10">
+     <article data-template-id="bahan-card" class="canva-card p-6 sm:p-8 rounded-2xl border shadow-sm" style="background: rgb(255, 255, 255);">
+      <h3 data-template-id="bahan-name" class="canva-text montserrat font-bold mb-3" style="color: rgb(11, 31, 58); font-weight: 700; font-style: normal; font-size: 19px;">Bahan Ajar Komunikasi Efektif di Set Produksi</h3>
+      <p data-template-id="bahan-text" class="canva-text leading-relaxed mb-6" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Bahan ajar Komunikasi Efektif di Set Produksi disusun sebagai sumber belajar pendamping modul ajar untuk membantu peserta didik memahami konsep komunikasi profesional dalam proses produksi televisi. Materi disajikan secara sistematis, dimulai dari pengertian komunikasi, urgensi komunikasi, alur komunikasi, prinsip komunikasi, bahasa produksi, komunikasi nonverbal, etika komunikasi, contoh miskomunikasi, hingga penerapannya dalam dunia kerja broadcasting. Penyajian materi dilengkapi dengan ilustrasi visual, contoh kasus, dan referensi sehingga memudahkan peserta didik memahami konsep secara bertahap.</p><a data-template-id="bahan-open-link" class="canva-button inline-flex items-center gap-2 px-4 py-2 rounded-lg font-semibold" href="https://drive.google.com/file/d/1cBGKUhmxnzQHOFh1XjbwNw_hHbj8H_Dg/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="background: rgb(29, 78, 216); color: rgb(255, 255, 255);"> <i data-lucide="external-link" class="w-4 h-4"></i><span data-template-id="bahan-open-text" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Buka Bahan Ajar</span> </a>
+      <div class="grid sm:grid-cols-2 gap-4 mt-6">
+       <div data-template-id="bahan-strength" class="canva-panel rounded-xl p-4" style="background: rgb(236, 253, 245);">
+        <p data-template-id="bahan-strength-label" class="canva-text text-sm font-bold mb-1" style="color: rgb(4, 120, 87); font-weight: 700; font-style: normal; font-size: 16px;">Kelebihan</p>
+        <p data-template-id="bahan-strength-text" class="canva-text text-sm" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;"><li>Materi disusun secara runtut dari konsep dasar hingga penerapan di dunia kerja sehingga mudah dipahami peserta didik.</li>
+<li>Menggunakan ilustrasi, infografis, dan contoh miskomunikasi yang membuat pembelajaran lebih menarik dan kontekstual.</li>
+<li>Memuat istilah-istilah produksi televisi serta etika komunikasi yang sesuai dengan kebutuhan industri broadcasting.</li>
+<li>Didukung referensi yang relevan sehingga materi memiliki dasar teoritis yang kuat.</li></p>
+       </div>
+       <div data-template-id="bahan-weakness" class="canva-panel rounded-xl p-4" style="background: rgb(255, 247, 237);">
+        <p data-template-id="bahan-weakness-label" class="canva-text text-sm font-bold mb-1" style="color: rgb(194, 65, 12); font-weight: 700; font-style: normal; font-size: 16px;">Kekurangan</p>
+        <p data-template-id="bahan-weakness-text" class="canva-text text-sm" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;"><li>Materi masih didominasi penyampaian informasi sehingga memerlukan penjelasan dan pendampingan guru agar peserta didik memahami penerapannya dalam situasi nyata.</li>
+<li>Pembahasan difokuskan pada komunikasi di set produksi sehingga contoh penerapan pada produksi di luar studio masih terbatas.</li>
+<li>Bahan ajar belum memuat aktivitas interaktif seperti latihan mandiri atau evaluasi singkat sehingga perlu didukung dengan LKPD dan kegiatan praktik saat pembelajaran berlangsung.</li></p>
+       </div>
+      </div>
+     </article>
+    </div>
+   </section>
+   <section id="media" class="page-section">
+    <div data-template-id="media-banner" class="canva-banner px-4 py-10" style="background: rgb(29, 78, 216);">
+     <div class="w-full max-w-5xl mx-auto">
+      <h2 data-template-id="media-title" class="canva-text montserrat font-extrabold" style="color: rgb(212, 175, 55); font-weight: 800; font-style: normal; font-size: 24px;">MEDIA AJAR</h2>
+      <p data-template-id="media-subtitle" class="canva-text text-sm mt-2" style="color: rgb(219, 234, 254); font-weight: 400; font-style: normal; font-size: 16px;">Media Presentasi Interaktif · Komunikasi Efektif di Set Produksi</p>
+     </div>
+    </div>
+    <div class="w-full max-w-5xl mx-auto px-4 py-10">
+     <article data-template-id="media-card" class="canva-card p-6 sm:p-8 rounded-2xl border shadow-sm" style="background: rgb(255, 255, 255);">
+      <h3 data-template-id="media-name" class="canva-text montserrat font-bold mb-3" style="color: rgb(11, 31, 58); font-weight: 700; font-style: normal; font-size: 19px;">Slide Presentasi Interaktif</h3>
+      <p data-template-id="media-text" class="canva-text leading-relaxed mb-6" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Media pembelajaran yang digunakan berupa PowerPoint interaktif dengan materi Komunikasi Efektif di Set Produksi. Media ini dirancang sebagai pendukung penyampaian materi agar peserta didik lebih mudah memahami konsep komunikasi dalam proses produksi televisi. Isi presentasi disusun secara sistematis mulai dari pengertian komunikasi produksi, pentingnya komunikasi di set, alur komunikasi, prinsip komunikasi efektif, bahasa produksi, komunikasi nonverbal, etika komunikasi, contoh miskomunikasi, studi kasus, diskusi, simulasi, hingga refleksi pembelajaran. Penyajian materi dilengkapi dengan ilustrasi, ikon, dan aktivitas diskusi sehingga mendorong keterlibatan aktif peserta didik selama pembelajaran.</p><a data-template-id="media-open-link" class="canva-button inline-flex items-center gap-2 px-4 py-2 rounded-lg font-semibold" href="https://drive.google.com/file/d/172KB2J89G52rchfdtowAkkg3V3T3zjLS/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="background: rgb(212, 175, 55); color: rgb(11, 31, 58);"> <i data-lucide="external-link" class="w-4 h-4"></i><span data-template-id="media-open-text" class="canva-text" style="color: rgb(11, 31, 58); font-weight: 700; font-style: normal; font-size: 16px;">Buka Media Ajar</span> </a>
+      <div class="grid sm:grid-cols-2 gap-4 mt-6">
+       <div data-template-id="media-strength" class="canva-panel rounded-xl p-4" style="background: rgb(236, 253, 245);">
+        <p data-template-id="media-strength-label" class="canva-text text-sm font-bold mb-1" style="color: rgb(4, 120, 87); font-weight: 700; font-style: normal; font-size: 16px;">Kelebihan</p>
+        <p data-template-id="media-strength-text" class="canva-text text-sm" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;"><li>Desain visual menarik dengan perpaduan ilustrasi, ikon, dan warna yang konsisten sehingga meningkatkan perhatian dan motivasi belajar peserta didik.</li>
+<li>Materi disusun secara bertahap dari konsep dasar menuju penerapan melalui studi kasus, diskusi, simulasi, dan refleksi sehingga mendukung pembelajaran yang bermakna.</li>
+<li>Tidak hanya menyampaikan informasi, tetapi juga menyediakan aktivitas pembelajaran seperti pertanyaan pemantik, analisis kasus, simulasi komunikasi di set syuting, dan refleksi sehingga peserta didik terlibat secara aktif.</li>
+<li>Isi media relevan dengan kondisi dunia kerja broadcasting karena memuat istilah produksi, etika komunikasi, dan contoh permasalahan komunikasi yang sering terjadi di set produksi.</li>
+</p>
+       </div>
+       <div data-template-id="media-weakness" class="canva-panel rounded-xl p-4" style="background: rgb(255, 247, 237);">
+        <p data-template-id="media-weakness-label" class="canva-text text-sm font-bold mb-1" style="color: rgb(194, 65, 12); font-weight: 700; font-style: normal; font-size: 16px;">Kekurangan</p>
+        <p data-template-id="media-weakness-text" class="canva-text text-sm" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;"> <li>Media berbasis PowerPoint memerlukan perangkat pendukung seperti laptop, LCD proyektor, dan listrik agar dapat digunakan secara optimal.</li>
+<li>Beberapa aktivitas, seperti simulasi dan diskusi, memerlukan pengelolaan waktu yang baik sehingga tidak mengurangi alokasi waktu untuk refleksi dan evaluasi.</li>
+<li>Efektivitas media sangat bergantung pada kemampuan guru dalam memfasilitasi diskusi dan menghubungkan materi presentasi dengan praktik nyata di kelas.</li></p>
+       </div>
+      </div>
+     </article>
+    </div>
+   </section>
+   <section id="video" class="page-section">
+    <div data-template-id="video-banner" class="canva-banner px-4 py-10" style="background: rgb(11, 31, 58);">
+     <div class="w-full max-w-5xl mx-auto">
+      <h2 data-template-id="video-title" class="canva-text montserrat font-extrabold" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 24px;">VIDEO PRAKTIK PEMBELAJARAN</h2>
+     </div>
+    </div>
+    <div class="w-full max-w-5xl mx-auto px-4 py-10">
+     <article data-template-id="video-card" class="canva-card p-6 sm:p-8 rounded-2xl border shadow-sm" style="background: rgb(255, 255, 255);">
+      <a data-template-id="video-open-link" href="https://drive.google.com/file/d/1BYMJbqaNx3sQK28ugep1cp4uAZqu822_/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="w-full aspect-video rounded-xl flex flex-col gap-4 items-center justify-center focus:outline-none focus:ring-4 focus:ring-blue-200" style="background:#0B1F3A"> <span class="w-16 h-16 rounded-full flex items-center justify-center" style="background:#D4AF37;color:#0B1F3A"><i data-lucide="play" class="w-8 h-8 ml-1 fill-current"></i></span> <span data-template-id="video-play-label" class="canva-text font-bold" style="color: rgb(255, 255, 255); font-weight: 700; font-style: normal; font-size: 16px;">Lihat Informasi Video</span> </a>
+      <h3 data-template-id="video-name" class="canva-text montserrat font-bold mt-6 mb-3" style="color: rgb(11, 31, 58); font-weight: 700; font-style: normal; font-size: 19px;">Praktik Pembelajaran Aktif di Kelas XI PSPT 1</h3>
+      <p data-template-id="video-text" class="canva-text leading-relaxed mb-6" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Video praktik mengajar merupakan dokumentasi pelaksanaan pembelajaran mata pelajaran Komunikasi Efektif di Set Produksi pada kelas XI PSPT 1 di SMK Negeri 1 Surabaya. Video tersebut menjadi bukti implementasi modul ajar, bahan ajar, media pembelajaran, serta penerapan model Project Based Learning (PjBL) dan pendekatan Deep Learning.</p>
+      <div class="grid sm:grid-cols-2 gap-4 mt-6">
+       <div data-template-id="video-strength" class="canva-panel rounded-xl p-4" style="background: rgb(236, 253, 245);">
+        <p data-template-id="video-strength-label" class="canva-text text-sm font-bold mb-1" style="color: rgb(4, 120, 87); font-weight: 700; font-style: normal; font-size: 16px;">Kelebihan</p>
+        <p data-template-id="video-strength-text" class="canva-text text-sm" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;"><li>Pembelajaran berlangsung secara student centered, dengan peserta didik aktif berdiskusi, melakukan simulasi, dan mempresentasikan hasil kerja kelompok.</li>
+            <li>Guru mampu membangun komunikasi yang baik melalui pertanyaan pemantik, pemberian umpan balik, serta pendampingan selama kegiatan berlangsung.</li>
+            <li>Penggunaan media PowerPoint, studi kasus, dan simulasi membuat pembelajaran lebih kontekstual dan sesuai dengan karakteristik mata pelajaran vokasi.</li></p>
+       </div>
+       <div data-template-id="video-weakness" class="canva-panel rounded-xl p-4" style="background: rgb(255, 247, 237);">
+        <p data-template-id="video-weakness-label" class="canva-text text-sm font-bold mb-1" style="color: rgb(194, 65, 12); font-weight: 700; font-style: normal; font-size: 16px;">Kekurangan</p>
+        <p data-template-id="video-weakness-text" class="canva-text text-sm" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;"> <li>Alokasi waktu pada kegiatan diskusi dan simulasi cukup panjang sehingga waktu refleksi menjadi lebih terbatas.</li>
+            <li>Intensitas pendampingan guru pada setiap kelompok belum sepenuhnya merata karena jumlah kelompok yang cukup banyak.</li>
+            <li>Masih terdapat beberapa peserta didik yang memerlukan motivasi tambahan agar lebih percaya diri saat menyampaikan pendapat dan melakukan presentasi.</li></p>
+       </div>
+      </div>
+     </article>
+    </div>
+   </section>
+   <section id="instrumen" class="page-section">
+    <div data-template-id="instrumen-banner" class="canva-banner px-4 py-10" style="background: rgb(243, 247, 251);">
+     <div class="w-full max-w-5xl mx-auto">
+      <h2 data-template-id="instrumen-title" class="canva-text montserrat font-extrabold" style="color: rgb(11, 31, 58); font-weight: 800; font-style: normal; font-size: 24px;">INSTRUMEN PENILAIAN</h2>
+      <p data-template-id="instrumen-subtitle" class="canva-text text-sm mt-2" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Asesmen Diagnostik · Komunikasi Efektif di Set Produksi</p>
+     </div>
+    </div>
+    <div class="w-full max-w-5xl mx-auto px-4 py-10">
+     <article data-template-id="instrumen-card" class="canva-card p-6 sm:p-8 rounded-2xl border shadow-sm" style="background: rgb(255, 255, 255);">
+      <h3 data-template-id="instrumen-name" class="canva-text montserrat font-bold mb-3" style="color: rgb(11, 31, 58); font-weight: 700; font-style: normal; font-size: 19px;">Instrumen Asesmen</h3>
+      <p data-template-id="instrumen-text" class="canva-text leading-relaxed mb-6" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Instrumen penilaian pada pembelajaran Komunikasi Efektif di Set Produksi dirancang untuk mengukur ketercapaian kompetensi peserta didik secara menyeluruh, meliputi aspek pengetahuan, keterampilan, dan sikap. Instrumen disusun secara berkelanjutan melalui asesmen diagnostik, formatif, serta penilaian praktik dan observasi. Hal ini sesuai dengan karakteristik pembelajaran yang menggabungkan pemahaman konsep dengan praktik komunikasi dalam situasi produksi.</p><a data-template-id="instrumen-open-link" class="canva-button inline-flex items-center gap-2 px-4 py-2 rounded-lg font-semibold" href="https://drive.google.com/file/d/1uHQQgpGxWarrugG84fNlNaXdX-YJ9fXD/view?usp=sharing" target="_blank" rel="noopener noreferrer" style="background: rgb(29, 78, 216); color: rgb(255, 255, 255);"> <i data-lucide="external-link" class="w-4 h-4"></i><span data-template-id="instrumen-open-text" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Buka Instrumen</span> </a>
+      <div class="grid sm:grid-cols-2 gap-4 mt-6">
+       <div data-template-id="instrumen-strength" class="canva-panel rounded-xl p-4" style="background: rgb(236, 253, 245);">
+        <p data-template-id="instrumen-strength-label" class="canva-text text-sm font-bold mb-1" style="color: rgb(4, 120, 87); font-weight: 700; font-style: normal; font-size: 16px;">Kelebihan</p>
+        <p data-template-id="instrumen-strength-text" class="canva-text text-sm" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;"> <li>Mengukur kompetensi secara menyeluruh</li>
+<li>Terdapat asesmen diagnostik</li>
+<li>Bentuk soal bervariasi</li>
+<li>Sesuai dengan karakteristik pembelajaran vokasi</li>
+<li>Mendukung pembelajaran berbasis praktik</li>
+<li>Memungkinkan guru memberikan tindak lanjut</li>
+</p>
+       </div>
+       <div data-template-id="instrumen-weakness" class="canva-panel rounded-xl p-4" style="background: rgb(255, 247, 237);">
+        <p data-template-id="instrumen-weakness-label" class="canva-text text-sm font-bold mb-1" style="color: rgb(194, 65, 12); font-weight: 700; font-style: normal; font-size: 16px;">Kekurangan</p>
+        <p data-template-id="instrumen-weakness-text" class="canva-text text-sm" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;"> <li>Diagnostik nonkognitif masih sederhana</li>
+<li>Jumlah soal pengetahuan masih terbatas</li>
+<li>Beberapa soal masih berada pada tingkat pemahaman dasar</li>
+<li>Penilaian praktik perlu indikator yang lebih terukur</li></p>
+       </div>
+      </div>
+     </article>
+    </div>
+   </section>
+   <section id="non-mengajar" class="page-section">
+    <div data-template-id="nonmengajar-banner" class="canva-banner px-4 py-10" style="background: linear-gradient(115deg, rgb(11, 31, 58), rgb(29, 78, 216));">
+     <div class="w-full max-w-5xl mx-auto">
+      <h2 data-template-id="nonmengajar-title" class="canva-text montserrat font-extrabold" style="color: rgb(255, 255, 255); font-weight: 800; font-style: normal; font-size: 24px;">KEGIATAN NON-MENGAJAR</h2>
+      <p data-template-id="nonmengajar-subtitle" class="canva-text mt-2" style="color: rgb(219, 234, 254); font-weight: 400; font-style: normal; font-size: 16px;">Dokumentasi keterlibatan dalam observasi, piket sekolah, dan pendampingan kegiatan peserta didik.</p>
+     </div>
+    </div>
+    <div class="w-full max-w-6xl mx-auto px-4 py-10">
+     <div class="grid lg:grid-cols-3 gap-7">
+      <article data-template-id="activity-card-1" class="canva-card activity-card-ui overflow-hidden rounded-2xl border shadow-sm" style="background: rgb(255, 255, 255);">
+       <div class="photo-frame h-60">
+        <img data-template-id="activity-photo-1" loading="lazy" class="canva-image w-full h-full object-cover" src="E:\5. APK\Port\images2.jpg" alt="Peserta didik melakukan kegiatan observasi di laboratorium komputer">
+       </div>
+       <div class="p-6">
+        <p data-template-id="activity-year-1" class="canva-text text-sm font-bold mb-2" style="color: rgb(29, 78, 216); font-weight: 700; font-style: normal; font-size: 16px;">PPL Mandiri · 23 Juli 2026</p>
+        <h3 data-template-id="activity-name-1" class="canva-text montserrat font-bold mb-3" style="color: rgb(11, 31, 58); font-weight: 700; font-style: normal; font-size: 19px;">Pendampingan Peserta Didik</h3>
+        <p data-template-id="activity-text-1" class="canva-text text-sm leading-relaxed" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Melakukan pendampingan peserta didik saat bekerja di laboratorium komputer untuk mendukung proses belajar, keterampilan praktik, serta dinamika kolaborasi di kelas.</p>
+        <div class="grid gap-3 mt-5">
+         <div data-template-id="activity-strength-1" class="canva-panel rounded-xl p-3" style="background: rgb(236, 253, 245);">
+          <p data-template-id="activity-strength-label-1" class="canva-text text-sm font-bold mb-1" style="color: rgb(4, 120, 87); font-weight: 700; font-style: normal; font-size: 16px;">Kelebihan</p>
+          <p data-template-id="activity-strength-text-1" class="canva-text text-sm" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;">Memberikan gambaran langsung mengenai aktivitas belajar dan kebutuhan peserta didik dalam pembelajaran praktik.</p>
+         </div>
+         <div data-template-id="activity-weakness-1" class="canva-panel rounded-xl p-3" style="background: rgb(255, 247, 237);">
+          <p data-template-id="activity-weakness-label-1" class="canva-text text-sm font-bold mb-1" style="color: rgb(194, 65, 12); font-weight: 700; font-style: normal; font-size: 16px;">Kekurangan</p>
+          <p data-template-id="activity-weakness-text-1" class="canva-text text-sm" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;">Observasi membutuhkan waktu yang cukup agar semua proses dan interaksi peserta didik dapat dicatat dengan baik.</p>
+         </div>
+        </div>
+       </div>
+      </article>
+      <article data-template-id="activity-card-2" class="canva-card activity-card-ui overflow-hidden rounded-2xl border shadow-sm" style="background: rgb(255, 255, 255);">
+       <div class="photo-frame h-60">
+        <img data-template-id="activity-photo-2" loading="lazy" class="canva-image w-full h-full object-cover" src="E:\5. APK\Port\images4.jpg" alt="Kegiatan piket pagi dan penyambutan peserta didik di lingkungan sekolah">
+       </div>
+       <div class="p-6">
+        <p data-template-id="activity-year-2" class="canva-text text-sm font-bold mb-2" style="color: rgb(29, 78, 216); font-weight: 700; font-style: normal; font-size: 16px;">PPL Mandiri · 27 Juli 2026</p>
+        <h3 data-template-id="activity-name-2" class="canva-text montserrat font-bold mb-3" style="color: rgb(11, 31, 58); font-weight: 700; font-style: normal; font-size: 19px;">Piket dan Penyambutan Peserta Didik</h3>
+        <p data-template-id="activity-text-2" class="canva-text text-sm leading-relaxed" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Berpartisipasi dalam kegiatan piket sekolah pada pagi hari melalui penyambutan peserta didik dan dukungan terhadap keteraturan aktivitas awal sekolah.</p>
+        <div class="grid gap-3 mt-5">
+         <div data-template-id="activity-strength-2" class="canva-panel rounded-xl p-3" style="background: rgb(236, 253, 245);">
+          <p data-template-id="activity-strength-label-2" class="canva-text text-sm font-bold mb-1" style="color: rgb(4, 120, 87); font-weight: 700; font-style: normal; font-size: 16px;">Kelebihan</p>
+          <p data-template-id="activity-strength-text-2" class="canva-text text-sm" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;">Membangun kedekatan dengan peserta didik sekaligus melatih disiplin, komunikasi, dan tanggung jawab sebagai pendidik.</p>
+         </div>
+         <div data-template-id="activity-weakness-2" class="canva-panel rounded-xl p-3" style="background: rgb(255, 247, 237);">
+          <p data-template-id="activity-weakness-label-2" class="canva-text text-sm font-bold mb-1" style="color: rgb(194, 65, 12); font-weight: 700; font-style: normal; font-size: 16px;">Kekurangan</p>
+          <p data-template-id="activity-weakness-text-2" class="canva-text text-sm" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;">Kegiatan berlangsung dalam waktu singkat sehingga interaksi dengan peserta didik belum dapat dilakukan secara mendalam.</p>
+         </div>
+        </div>
+       </div>
+      </article>
+      <article data-template-id="activity-card-3" class="canva-card activity-card-ui overflow-hidden rounded-2xl border shadow-sm" style="background: rgb(255, 255, 255);">
+       <div class="photo-frame h-60">
+        <img data-template-id="activity-photo-3" loading="lazy" class="canva-image w-full h-full object-cover" src="E:\5. APK\Port\images3.jpg" alt="Peserta didik mengikuti kegiatan upacara bendera di sekolah">
+       </div>
+       <div class="p-6">
+        <p data-template-id="activity-year-3" class="canva-text text-sm font-bold mb-2" style="color: rgb(29, 78, 216); font-weight: 700; font-style: normal; font-size: 16px;">PPL Mandiri · 27 Juli 2026</p>
+        <h3 data-template-id="activity-name-3" class="canva-text montserrat font-bold mb-3" style="color: rgb(11, 31, 58); font-weight: 700; font-style: normal; font-size: 19px;">Pendampingan Upacara Bendera</h3>
+        <p data-template-id="activity-text-3" class="canva-text text-sm leading-relaxed" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Berpartisipasi dalam pendampingan kegiatan upacara bendera sebagai bagian dari kontribusi terhadap pembinaan kedisiplinan dan budaya sekolah.</p>
+        <div class="grid gap-3 mt-5">
+         <div data-template-id="activity-strength-3" class="canva-panel rounded-xl p-3" style="background: rgb(236, 253, 245);">
+          <p data-template-id="activity-strength-label-3" class="canva-text text-sm font-bold mb-1" style="color: rgb(4, 120, 87); font-weight: 700; font-style: normal; font-size: 16px;">Kelebihan</p>
+          <p data-template-id="activity-strength-text-3" class="canva-text text-sm" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;">Menguatkan pemahaman tentang budaya sekolah, kedisiplinan, serta kerja sama antara guru dan peserta didik.</p>
+         </div>
+         <div data-template-id="activity-weakness-3" class="canva-panel rounded-xl p-3" style="background: rgb(255, 247, 237);">
+          <p data-template-id="activity-weakness-label-3" class="canva-text text-sm font-bold mb-1" style="color: rgb(194, 65, 12); font-weight: 700; font-style: normal; font-size: 16px;">Kekurangan</p>
+          <p data-template-id="activity-weakness-text-3" class="canva-text text-sm" style="color: rgb(71, 85, 105); font-weight: 400; font-style: normal; font-size: 16px;">Kegiatan bergantung pada kondisi lapangan dan cuaca sehingga perlu kesiapan serta koordinasi yang baik.</p>
+         </div>
+        </div>
+       </div>
+      </article>
+     </div>
+    </div>
+   </section>
+   <div class="w-full max-w-7xl mx-auto px-4 pb-10 flex justify-end">
+    <button data-template-id="back-home-button" type="button" onclick="navigateTo('home')" class="canva-button flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold focus:outline-none focus:ring-4 focus:ring-blue-200" style="background: rgb(11, 31, 58); color: rgb(255, 255, 255);"> <i data-lucide="arrow-left" class="w-4 h-4"></i><span data-template-id="back-home-text" class="canva-text" style="color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Kembali ke Beranda</span> </button>
+   </div>
+  </main>
+  <footer data-template-id="site-footer" class="canva-footer px-4 py-8 border-t-2" style="border-color: rgb(212, 175, 55); background: rgb(11, 31, 58);">
+   <div class="w-full max-w-7xl mx-auto text-center">
+    <p data-template-id="footer-main" class="canva-text font-semibold" style="color: rgb(203, 213, 225); font-weight: 700; font-style: normal; font-size: 16px;">E-Portfolio · Rahmat Hidayat · PPG Calon Guru · 2026</p>
+    <p data-template-id="footer-sub" class="canva-text text-sm mt-1" style="color: rgb(148, 163, 184); font-weight: 400; font-style: normal; font-size: 16px;">Terhubung melalui media sosial</p>
+    <nav aria-label="Media sosial" class="flex justify-center flex-wrap gap-3 mt-5">
+     <a data-template-id="social-instagram" class="canva-link social-link w-10 h-10 rounded-full flex items-center justify-center" href="https://www.instagram.com/rhidayat297/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" style="background: rgb(29, 78, 216); color: rgb(255, 255, 255);"><i data-lucide="instagram" class="w-5 h-5"></i></a> <a data-template-id="social-tiktok" class="canva-link social-link w-10 h-10 rounded-full flex items-center justify-center" href="https://www.tiktok.com/@rhidayat297" target="_blank" rel="noopener noreferrer" aria-label="TikTok" style="background: rgb(29, 78, 216); color: rgb(255, 255, 255);"><i data-lucide="music-2" class="w-5 h-5"></i></a> <a data-template-id="social-whatsapp" class="canva-link social-link w-10 h-10 rounded-full flex items-center justify-center" href="https://wa.me/6285233142914" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" style="background: rgb(29, 78, 216); color: rgb(255, 255, 255);"><i data-lucide="message-circle" class="w-5 h-5"></i></a> <a data-template-id="social-facebook" class="canva-link social-link w-10 h-10 rounded-full flex items-center justify-center" href="https://www.facebook.com/Rahmat.Probolinggo" target="_blank" rel="noopener noreferrer" aria-label="Facebook" style="background: rgb(29, 78, 216); color: rgb(255, 255, 255);"><i data-lucide="facebook" class="w-5 h-5"></i></a>
+    </nav>
+   </div>
+  </footer>
+  <div id="preview-modal" class="fixed inset-0 z-50 hidden items-center justify-center p-4" role="dialog" aria-modal="true" aria-labelledby="preview-title">
+   <button type="button" class="absolute inset-0 bg-slate-950/70 cursor-default" aria-label="Tutup informasi video" onclick="closePreview()"></button>
+   <div data-template-id="preview-panel" class="canva-panel relative w-full max-w-md rounded-2xl p-7 shadow-2xl" style="background: rgb(255, 255, 255);">
+    <button data-template-id="close-button" type="button" onclick="closePreview()" class="canva-button absolute top-4 right-4 w-9 h-9 rounded-full font-bold focus:outline-none focus:ring-4 focus:ring-blue-200" aria-label="Tutup" style="background: rgb(243, 247, 251); color: rgb(11, 31, 58); font-weight: 700;">×</button> <i data-lucide="video" class="w-10 h-10 mb-4" style="color:#D4AF37"></i>
+    <h2 id="preview-title" data-template-id="preview-title" class="canva-text montserrat font-bold" style="color: rgb(11, 31, 58); font-weight: 700; font-style: normal; font-size: 24px;">Video Praktik Pembelajaran</h2>
+    <p data-template-id="preview-description" class="canva-text text-sm leading-relaxed mt-3" style="color: rgb(100, 116, 139); font-weight: 400; font-style: normal; font-size: 16px;">Dokumentasi video praktik pembelajaran dapat digunakan sebagai bukti pelaksanaan pembelajaran aktif, kolaboratif, dan kontekstual di kelas.</p><button data-template-id="preview-close-button" type="button" onclick="closePreview()" class="canva-button mt-6 px-5 py-2 rounded-lg font-semibold" style="background: rgb(29, 78, 216); color: rgb(255, 255, 255); font-weight: 600; font-style: normal; font-size: 16px;">Tutup</button>
+   </div>
+  </div>
+  <script src="/_sdk/0aac212797dcb9a6.editing_sdk.js" integrity="sha512-U1Z5TGB/MTX0fFSADhP7rVM3+UzJJjKTapiY1vm1cxcbcyWo4eBuCJNJO6zARJ5kHopP9UvWNtPszOqzRc1ICA=="></script>
+  <script>
+    function navigateTo(pageId) {
+      document.querySelectorAll('.page-section').forEach(function(section) {
+        section.classList.remove('active');
+      });
+      const page = document.getElementById(pageId);
+      if (page) page.classList.add('active');
+
+      document.querySelectorAll('.nav-btn').forEach(function(button) {
+        button.classList.remove('active');
+      });
+      const navMap = {
+        home: 'nav-home',
+        modul: 'nav-modul',
+        bahan: 'nav-bahan',
+        media: 'nav-media',
+        video: 'nav-video',
+        instrumen: 'nav-instrumen',
+        'non-mengajar': 'nav-nonmengajar'
+      };
+      const activeButton = document.querySelector('[data-template-id="' + navMap[pageId] + '"]');
+      if (activeButton) activeButton.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function openPreview() {
+      const modal = document.getElementById('preview-modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      modal.querySelector('[data-template-id="close-button"]').focus();
+    }
+
+    function closePreview() {
+      const modal = document.getElementById('preview-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') closePreview();
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      lucide.createIcons();
+      navigateTo('home');
+    });
+  </script>
+ 
+</body></html>
